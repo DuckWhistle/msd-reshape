@@ -39,7 +39,7 @@ for xl_file_name in xl_files:
     print xl_file_name
     xl_file_full_path = xl_dir + xl_file_name
     from openpyxl import load_workbook
-    wb = load_workbook(filename=xl_file_full_path, data_only=True) #read_only=True)#
+    wb = load_workbook(filename=xl_file_full_path, read_only=True) #data_only=True) ##
     sheet_names = wb.get_sheet_names()
     ##sheet_ranges = wb['range names'] 
     ##print(sheet_ranges['D18'].value)
